@@ -1,0 +1,195 @@
+<html>
+<div class="container">
+  <header class="header">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+    <h1 id="title" class="text-center">Softdrinks Survey Form</h1>
+    <p id="description" class="description text-center">
+      Help us to know what are the preferences of the people.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which softdrinks do you like most?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select your drink here</option>
+        <option value="coke">Coke</option>
+        <option value="zero">Coke Zero</option>
+        <option value="sprite">Sprite</option>
+          <option value="Royal">Royal</option>
+          <option value="Pepsi">Pepsi</option>
+          <option value="7up">7up</option>
+          <option value="MountainDew">Mountain Dew</option>
+        <option value="other">Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend this survey to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite feature of your drink?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an attribute of your drink</option>
+        <option value="challenges">Fiz</option>
+        <option value="projects">Sweetness</option>
+        <option value="community">o2 level</option>
+        <option value="openSource">Caffeine</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="More-fiz"
+          type="checkbox"
+          class="input-checkbox"
+        />More fiz</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Less-fiz"
+          type="checkbox"
+          class="input-checkbox"
+        />Less fiz</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="More-sweetness"
+          type="checkbox"
+          class="input-checkbox"
+        />More sweetness</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Less-sweetness"
+          type="checkbox"
+          class="input-checkbox"
+        />Less sweetness</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="More-o2"
+          type="checkbox"
+          class="input-checkbox"
+        />More o2</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Less-o2"
+          type="checkbox"
+          class="input-checkbox"
+        />Less o2</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="More-caffeine"
+          type="checkbox"
+          class="input-checkbox"
+        />More caffeine</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Less-caffeine"
+          type="checkbox"
+          class="input-checkbox"
+        />less caffeine</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</html>
